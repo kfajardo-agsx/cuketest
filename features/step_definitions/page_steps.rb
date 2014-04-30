@@ -18,11 +18,10 @@ Testcase /^A user with username (.+) and password (.+) Can Login using credentia
   Procedure %{
     * Visit the login page
     * Fill in the Username field with #{inputted_username}
-    * Fill in the Password field with #{inputted_password}
+    * Fill in password value #{inputted_password} on Password field
     * Click the Login button
   }
-  Cleanup %{
-    *  
+  Cleanup %{  
   }
 end
 
@@ -33,10 +32,9 @@ Testcase /^A user with username (.+) and password (.+) Cannot Login using creden
   Procedure %{
     * Visit the login page
     * Fill in the Username field with #{inputted_username}
-    * Fill in the Password field with #{inputted_password}
+    * Fill in password value #{inputted_password} on Password field
     * Click the Login button
   }
   Cleanup %{
-    *  
   }
 end
