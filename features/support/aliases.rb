@@ -18,6 +18,6 @@ def Cleanup(str)
   steps str
 end
 
-def Script(str)
+def Procedure(str)
   steps str
 end
